@@ -1,3 +1,29 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+}
+.redes{
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
 #logoAP{
-    width: 150PX;
+    width: 180px;
+}
+.redes img{
+    width: 50px;
+}
+/*celular*/
+@media(max-width:570px) {
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.3em;
+    }
 }
